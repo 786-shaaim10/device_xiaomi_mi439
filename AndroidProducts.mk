@@ -9,6 +9,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/orion_mi439.mk
 
 COMMON_LUNCH_CHOICES := \
-    orion_mi439-user \
-    orion_mi439-userdebug \
-    orion_mi439-eng
+    orion_mi439-trunk_staging-user \
+    orion_mi439-trunk_staging-userdebug \
+    orion_mi439-trunk_staging-eng
