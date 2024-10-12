@@ -19,12 +19,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mi439 device configuration.
 $(call inherit-product, device/xiaomi/mi439/device.mk)
 
-# Inherit from common AOSP configuration
-$(call inherit-product, vendor/orion/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+TARGET_DISABLE_EPPE := true
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # OrionOS Flags
-ORION_MAINTAINER := FARHAN_AFK
-ORION_MAINTAINER_LINK := https://t.me/FARHAN_MUH_TASIM
+ORION_MAINTAINER := "FARHAN_AFK"
+ORION_MAINTAINER_LINK := "https://t.me/FARHAN_MUH_TASIM"
 ORION_GAPPS := false 
 BUILD_GOOGLE_CONTACTS := true
 BUILD_GOOGLE_DIALER := true
