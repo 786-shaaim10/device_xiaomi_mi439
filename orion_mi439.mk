@@ -23,8 +23,8 @@ $(call inherit-product, device/xiaomi/mi439/device.mk)
 $(call inherit-product, vendor/orion/config/common_full_phone.mk)
 
 # OrionOS Flags
-ORION_MAINTAINER := FARHAN_AFK
-ORION_MAINTAINER_LINK := https://t.me/FARHAN_MUH_TASIM
+ORION_MAINTAINER := "FARHAN_AFK"
+ORION_MAINTAINER_LINK := "https://t.me/FARHAN_MUH_TASIM"
 ORION_GAPPS := false 
 BUILD_GOOGLE_CONTACTS := true
 BUILD_GOOGLE_DIALER := true
