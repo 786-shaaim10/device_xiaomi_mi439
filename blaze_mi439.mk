@@ -1,4 +1,4 @@
-# Copyright (C) 2022 Paranoid Android
+# Copyright (C) 2022 blaze Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,15 +19,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mi439 device configuration.
 $(call inherit-product, device/xiaomi/mi439/device.mk)
 
-# Inherit from common AOSP configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit from common blaze configuration
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 PRODUCT_NAME := aosp_mi439
 PRODUCT_DEVICE := mi439
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
 PRODUCT_MANUFACTURER := Xiaomi
-ROM_FOLDER := aosp
+
+# project blaze stuffs 
+TARGET_FACE_UNLOCK_SUPPORTED := true
+#BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := FARHAN AFK?
+WITH_GAPPS := false 
+
+# These shortcut to fix error 
+ROM_FOLDER := blaze
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
