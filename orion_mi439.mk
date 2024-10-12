@@ -21,7 +21,7 @@ $(call inherit-product, device/xiaomi/mi439/device.mk)
 
 # Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/orion/config/common_full_phone.mk)
 
 # OrionOS Flags
 ORION_MAINTAINER := "FARHAN_AFK"
@@ -30,7 +30,7 @@ ORION_GAPPS := false
 BUILD_GOOGLE_CONTACTS := true
 BUILD_GOOGLE_DIALER := true
 BUILD_GOOGLE_MESSAGE := true
-ROM_FOLDER := lineage 
+ROM_FOLDER := orion 
 
 PRODUCT_NAME := orion_mi439
 PRODUCT_DEVICE := mi439
