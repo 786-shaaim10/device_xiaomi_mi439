@@ -229,9 +229,8 @@ include vendor/xiaomi/mi439/BoardConfigVendor.mk
 include device/qcom/common/BoardConfigQcom.mk
 
 # Missing Required Module
-BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
-export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
-ALLOW_MISSING_DEPENDENCIES=true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true 
+ALLOW_MISSING_DEPENDENCIES := true 
 
 
 # Properties
