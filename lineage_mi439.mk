@@ -28,16 +28,37 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Matrixx
-MATRIXX_CHIPSET := Mi439
-MATRIXX_BATTERY := 5000mAh
-MATRIXX_DISPLAY := 720x1520
-MATRIXX_MAINTAINER := FARHAN•AFK
+# Device config
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
 TARGET_EXCLUDES_AUDIOFX := true
-TARGET_EXCLUDES_AUXIO := true
-TARGET_EXCLUDES_VIA := true
-TARGET_BOOT_ANIMATION_RES := 720
-WITH_GMS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# TARGET_BUILD_PACKAGE options:
+# 1 - vanilla (default)
+# 2 - microg
+# 3 - gapps
+TARGET_BUILD_PACKAGE := 3
+
+# TARGET_LAUNCHER options:
+# 1 - stock (default)
+# 2 - lawnchair
+# 3 - pixel (valid only on gapps builds)
+TARGET_LAUNCHER := 3
+
+# GAPPS (valid only for GAPPS builds)
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+# TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# Debugging
+TARGET_INCLUDE_MATLOG := false
+
+# Maintainer
+#ALPHA_BUILD_TYPE := Official
+ALPHA_MAINTAINER := shaaim?
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
