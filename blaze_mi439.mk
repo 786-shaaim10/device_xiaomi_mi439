@@ -28,6 +28,15 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
 PRODUCT_MANUFACTURER := Xiaomi
 
+# project blaze stuffs 
+TARGET_FACE_UNLOCK_SUPPORTED := true
+#BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := FARHAN AFK?
+WITH_GAPPS := false 
+
+# These shortcut to fix error 
+ROM_FOLDER := blaze
+
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
 
