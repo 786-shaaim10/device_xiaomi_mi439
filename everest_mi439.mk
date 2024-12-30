@@ -19,23 +19,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mi439 device configuration.
 $(call inherit-product, device/xiaomi/mi439/device.mk)
 
-# Inherit from common AOSP configuration
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+# Inherit from common everest configuration
+$(call inherit-product, vendor/everest/config/common_full_phone.mk)
 
-PRODUCT_NAME := blaze_mi439
+PRODUCT_NAME := everest_mi439
 PRODUCT_DEVICE := mi439
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
 PRODUCT_MANUFACTURER := Xiaomi
 
-# project blaze stuffs 
-TARGET_FACE_UNLOCK_SUPPORTED := true
-#BLAZE_BUILD_TYPE := OFFICIAL
-BLAZE_MAINTAINER := FARHAN AFK?
+# Everest Maintainer Stuff
+#EVEREST_BUILD_TYPE := OFFICIAL
+EVEREST_MAINTAINER := shaaim_fficial
+
+# UDFPS FLAGS
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+# Pixel laucher blur
+TARGET_USES_BLUR_RECENT := false
 WITH_GAPPS := false 
 
 # These shortcut to fix error 
-ROM_FOLDER := blaze
+ROM_FOLDER := everest
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
