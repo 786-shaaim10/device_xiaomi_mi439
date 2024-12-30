@@ -30,7 +30,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 # Everest Maintainer Stuff
 #EVEREST_BUILD_TYPE := OFFICIAL
-EVEREST_MAINTAINER := shaaim_fficial
+EVEREST_MAINTAINER := shaaim_official
 
 # UDFPS FLAGS
 TARGET_HAS_UDFPS := true
