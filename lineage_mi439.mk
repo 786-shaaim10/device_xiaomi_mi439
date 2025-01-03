@@ -20,9 +20,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/mi439/device.mk)
 
 # Inherit from common everest configuration
-$(call inherit-product, vendor/everest/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := everest_mi439
+PRODUCT_NAME := lineage_mi439
 PRODUCT_DEVICE := mi439
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
@@ -41,7 +41,7 @@ TARGET_USES_BLUR_RECENT := false
 WITH_GAPPS := false 
 
 # These shortcut to fix error 
-ROM_FOLDER := everest
+ROM_FOLDER := lineage
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
