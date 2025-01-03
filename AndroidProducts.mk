@@ -6,10 +6,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/everest_mi439.mk
+    $(LOCAL_DIR)/lineage_mi439.mk
 
 
 COMMON_LUNCH_CHOICES := \
-    everest_mi439-user \
-    everest_mi439-userdebug \
-    everest_mi439-eng
+    lineage_mi439-user \
+    lineage_mi439-userdebug \
+    lineage_mi439-eng
