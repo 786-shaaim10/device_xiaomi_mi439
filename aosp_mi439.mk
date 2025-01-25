@@ -27,6 +27,10 @@ PRODUCT_DEVICE := mi439
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
 PRODUCT_MANUFACTURER := Xiaomi
+#WITH_GAPPS := ture/false 
+
+# These shortcut to fix error 
+ROM_FOLDER := aosp
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
