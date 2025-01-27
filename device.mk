@@ -443,3 +443,6 @@ endif
 
 # QC common
 $(call inherit-product, device/qcom/common/common.mk)
+
+# Updater
+AB_OTA_UPDATER := false
